@@ -1,0 +1,12 @@
+title PART0.6 NEW NOTE
+
+browser->server: HTTP POST request ../exampleapp/new_note_spa
+server->browser: Status code 201: request has been fullfilled and resources created
+
+
+COMMENT:
+
+The server doesn't ask the browser to make a new HTTP GET request.
+Browser side javascript code pushes the new note to notes array and then renders the array list in browser without refreshing the page and making additional GET requests to the server
+
+

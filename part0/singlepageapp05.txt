@@ -1,0 +1,18 @@
+title PART0.5 SINGLE PAGE APP
+
+browser->server: HTTP GET request .../exampleapp/spa
+server->browser: Status code: 304 + notes html file
+browser->server: HTTP GET request.../exampleapp/main.css 
+server->browser: Status code: 304 + main.css 
+browser->server: HTTP GET request .../exampleapp/spa.js
+server->browser: Status code 304 + spa.js javascript code
+
+BROWSER SIDE: Javascript code executes on browser and it needs json file from the server
+
+browser->server: HTTP GET request .../exampleapp/data.json
+server->browser: Status code 304 + json data
+browser->server: HTTP GET request .../favicon.ico
+server->browser: favicon.ico
+
+BROWSER SIDE: notes array is rendered to browser display
+
